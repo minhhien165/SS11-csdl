@@ -1,5 +1,4 @@
 USE session_11;
--- Bài 3
 -- 2 
 delimiter &&
 create procedure GetCustomerByPhone(in phoneNumber varchar(20))
