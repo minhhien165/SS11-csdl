@@ -1,5 +1,4 @@
 USE session_11;
--- bài 2
 -- 2
 create index idx_phonenumber on customers(phonenumber);  
 
