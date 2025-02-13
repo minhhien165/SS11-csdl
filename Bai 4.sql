@@ -1,5 +1,4 @@
 USE session_11;
--- Bài 4
 -- 2 
 delimiter &&
 create procedure UpdateSalaryByID(in employee_Id int, out newSalary decimal(10,2))
