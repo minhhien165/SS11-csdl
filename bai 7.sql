@@ -5,7 +5,7 @@ as
 	select tr.trackId, tr.name as trackName, al.title as albumTitle, ar.name as artistName, tr.unitPrice
     from track tr
     join album al on al.albumId = tr.albumId
-    join artist ar on ar.artistId - al.artistId
+    join artist ar on ar.artistId = al.artistId
     where tr.unitPrice > 0.99;
     
 select * from View_Track_Details;
@@ -97,6 +97,7 @@ call GetTopSellingTracks(4, 10);
 -- 10
 drop view View_Track_Details;
 drop view View_Customer_Invoice;
+drop view View_Top_Selling_Tracks;
 drop index idx_Track_Name on track;
 drop index idx_Invoice_Total on invoice;
 drop procedure GetCustomerSpending;
